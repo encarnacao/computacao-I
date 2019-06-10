@@ -57,29 +57,3 @@ def ls10(data1,data2):
     ano1 = int(data1[6:])
     ano2 = int(data2[6:])
     return (ano2*365 + mes2*30 + dias2)-(ano1*365 + mes1*30 + dias1)
-    '''if ano1>ano2:
-        return 'A segunda data deve ser maior que a primeira'
-    elif ano1==ano2 and mes1>mes2:
-        return 'A segunda data deve ser maior que a primeira'
-    elif (ano1==ano2 and mes1 == mes2) and dia1>dia2:
-        return 'A segunda data deve ser maior que a primeira'
-    else:
-        if ano1 == ano2:
-            if dias2>=dias1:
-                dias = (mes2-mes1)*30 + dias2-dias1
-            else:
-                dias = (mes2-mes1-1)*30 + 30-(dias1-dias2)
-        else:
-            if mes2>=mes1:
-                dias=(ano2-ano1)*365
-                if dias2>=dias1:
-                    dias+=(mes2-mes1)*30 + dias2-dias1
-                else:
-                    dias+=(mes2-mes1-1)*30 + 30-(dias1-dias2)
-            else:
-                dias=(ano2-ano1-1)*365 + 5
-                if dias2>=dias1:
-                    dias+=abs(12-abs(mes2-mes1))*30 + dias2-dias1
-                else:
-                    dias+=abs(11-abs(mes2-mes1))*30 + 30-(dias1-dias2)
-        return dias'''
